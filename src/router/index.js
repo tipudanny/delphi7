@@ -17,6 +17,11 @@ const routes = [
     name: 'Register',
     component: Register
   },
+  {
+    path: '/otp-confirmation',
+    name: 'Confirm OTP',
+    component: function () { return import('@/components/Otp.vue') }
+  },
 ]
 
 const router = new VueRouter({
